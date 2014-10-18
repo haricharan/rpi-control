@@ -17,7 +17,7 @@ app.get('/playvideo', function (req, res) {
             console.log('exec error: ' + error);
         }
     });
-    res.send('Hello World');
+    res.send('Playing video from url - ' + req.query.url + ' on Raspberry Pi');
 })
 
 var server = app.listen(3000, host, function () {
